@@ -1,0 +1,44 @@
+node_modules/
+.env
+dist
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.code-workspace
+*.log
+*.bak
+*.tmp
+*.backup
+*.old
+*.orig
+*.rej
+*.class
+*.pyc
+__pycache__/
+
+# Dependency directories
+venv/   
+.env/
+build/
+*.egg-info/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.coverage.*
+.pyre/
+celerybeat-schedule
+instance/
+.scrapy/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/ 
