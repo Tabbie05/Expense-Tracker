@@ -1,12 +1,26 @@
-import React from 'react'
-import Form from './components/Form.jsx'
+import React from "react";
+import Form from "./components/Form";
 
 function App() {
   return (
-    <div >
-      <Form />
+    <div className="relative min-h-screen w-full overflow-hidden">
+      {/* ✅ Background image layer */}
+      <div
+        className="absolute inset-0 w-full h-full z-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/money.jpg')",
+        }}
+      ></div>
+
+      {/* ✅ Semi-transparent overlay */}
+      <div className="absolute inset-0 bg-black/40 z-5"></div>
+
+      {/* ✅ Foreground content */}
+      <div className="relative z-10 flex justify-center items-center min-h-screen">
+        <Form />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
