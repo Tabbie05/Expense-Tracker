@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./components/Form";
-
+import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
@@ -17,7 +17,7 @@ function App() {
 
       {/* ✅ Foreground content */}
       <div className="relative z-10 flex justify-center items-center min-h-screen">
-        <Form />
+        <Dashboard /> 
       </div>
     </div>
   );
